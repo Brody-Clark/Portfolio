@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.0f2bc98e.css",
-    "main.js": "/Portfolio/static/js/main.a96c849d.js",
+    "main.css": "/Portfolio/static/css/main.cbcdae2b.css",
+    "main.js": "/Portfolio/static/js/main.d0932e04.js",
     "static/js/488.9561f9b8.chunk.js": "/Portfolio/static/js/488.9561f9b8.chunk.js",
-    "static/media/unity-sample.png": "/Portfolio/static/media/unity-sample.f93a6b646206084c2e6b.png",
     "static/media/elk-analytics.png": "/Portfolio/static/media/elk-analytics.10584b11f5b2db12c765.png",
     "static/media/visual-studio.png": "/Portfolio/static/media/visual-studio.a06f44ec74d12a6b2c36.png",
+    "static/media/unity-action-platformer.jpg": "/Portfolio/static/media/unity-action-platformer.bda2708f9c34689ee3ec.jpg",
     "static/media/Brody_Clark_Resume.pdf": "/Portfolio/static/media/Brody_Clark_Resume.823bd12a433be1c042c9.pdf",
     "static/media/portfolio.png": "/Portfolio/static/media/portfolio.f2f43fb2e100dcc74810.png",
     "static/media/react-grocery-app.png": "/Portfolio/static/media/react-grocery-app.3032968a763a4afa243a.png",
@@ -14,15 +14,13 @@
     "static/media/country-weather.png": "/Portfolio/static/media/country-weather.72f9e01d6cb1fbb7b4ff.png",
     "static/media/avatar.jpg": "/Portfolio/static/media/avatar.aa2d7868df2004af86e0.jpg",
     "static/media/unreal-engine-5.jpg": "/Portfolio/static/media/unreal-engine-5.3294036ff48e81c3320b.jpg",
-    "static/media/BU.png": "/Portfolio/static/media/BU.bbc8575aebd45496104e.png",
-    "static/media/logo.svg": "/Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Portfolio/index.html",
-    "main.0f2bc98e.css.map": "/Portfolio/static/css/main.0f2bc98e.css.map",
-    "main.a96c849d.js.map": "/Portfolio/static/js/main.a96c849d.js.map",
+    "main.cbcdae2b.css.map": "/Portfolio/static/css/main.cbcdae2b.css.map",
+    "main.d0932e04.js.map": "/Portfolio/static/js/main.d0932e04.js.map",
     "488.9561f9b8.chunk.js.map": "/Portfolio/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f2bc98e.css",
-    "static/js/main.a96c849d.js"
+    "static/css/main.cbcdae2b.css",
+    "static/js/main.d0932e04.js"
   ]
 }
