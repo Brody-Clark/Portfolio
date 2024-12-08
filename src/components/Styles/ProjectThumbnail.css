@@ -1,0 +1,30 @@
+.project {
+    display: flex;
+    color: var(--font-color-light);
+    flex-direction: column;
+    border-radius: .75rem;
+    text-decoration: none;
+    transition: all 100ms ease-in-out;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+}
+
+.project:hover {
+    scale: 1.1;
+}
+
+.project>img {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.project>p {
+    font-size: 1rem;
+}
+@media (max-width: 1024px) {
+    .project:hover{
+        scale: 1;
+        background-color: rgb(26, 26, 26);
+    }
+    
+}

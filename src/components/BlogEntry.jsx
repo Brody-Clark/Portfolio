@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import './Styles/BlogEntry.css'
 
 class BlogEntry extends React.Component {
     constructor(props) {

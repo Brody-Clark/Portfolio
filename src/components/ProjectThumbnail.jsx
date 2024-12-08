@@ -1,4 +1,5 @@
 import React from "react";
+import './Styles/ProjectThumbnail.css'
 
 class ProjectThumbnail extends React.Component {
     constructor(props) {

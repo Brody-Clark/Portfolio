@@ -1,0 +1,207 @@
+
+.intro-overlay-wrapper {
+    padding-top: 2rem;
+}
+
+@supports (animation-timeline: scroll()) {
+    .intro-overlay-wrapper {
+        padding-top: 0px;
+
+        animation: adjust-info linear both;
+        animation-timeline: scroll();
+        animation-range: 0 500px;
+    }
+
+    .name {
+        animation: shrink-name linear both;
+        animation-timeline: scroll();
+        animation-range: 0 500px;
+    }
+
+    .avatar,
+    .avatar-wrapper {
+        animation: adjust-avatar linear both;
+        animation-timeline: scroll();
+        animation-range: 0 500px;
+    }
+
+    .info {
+        animation: adjust-info linear both;
+        animation-timeline: scroll();
+        animation-range: 0 500px;
+    }
+
+    .resume {
+        animation: hide-resume-button steps(1, end) both;
+        animation-timeline: scroll();
+        animation-range: 0 300px;
+    }
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 22vw;
+    height: 22vw;
+    aspect-ratio: 1 / 1;
+    max-width: 30em;
+}
+
+.intro-overlay-wrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: var(--height-header);
+    align-items: center;
+    padding-left: 25%;
+
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-image: radial-gradient(61% 81% at 45% 47%, #0C0A1A45 2%, #123EFD00 100%), radial-gradient(113% 91% at 17% -2%, #2A1C1CFF 1%, #FF000000 100%), radial-gradient(142% 91% at -6% 74%, #020001FF 1%, #FF000000 100%), radial-gradient(142% 91% at 111% 84%, #180606FF 98%, #080500FF 200%);
+}
+
+
+.info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-container>img {
+    width: 30rem;
+}
+
+.info {
+    width: fit-content;
+    align-content: center;
+    color: var(--font-color-light);
+    height: var(--height-header);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.skills {
+    margin-top: 0px;
+}
+
+.name {
+    font-size: 4em;
+    margin: 10rem 0px 0px 0px;
+    color: var(--font-color-light);
+}
+
+.right-arrow {
+    padding: 2px 2px 2px 6px;
+    fill: var(--font-color-light);
+}
+
+.avatar-wrapper {
+    height: var(--height-header);
+    align-content: center;
+    align-items: center;
+}
+
+.button-round {
+    background-color: transparent;
+    color: var(--font-color-light);
+    border: 1px solid var(--font-color-light);
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.button-text {
+    font-size: .85rem;
+    padding: 0px 20px 0px 20px;
+}
+
+.resume {
+    text-decoration: none;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em 1em 2em;
+    margin-top: 2em;
+}
+
+.resume>span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.resume:hover {
+    background-color: rgba(107, 107, 107, 0.2);
+}
+
+@keyframes adjust-avatar {
+    to {
+        width: 5em;
+        height: 5em;
+    }
+}
+
+@keyframes adjust-info {
+    to {
+        grid-template-columns: 10% 90%;
+        height: 6rem;
+    }
+}
+
+@keyframes hide-resume-button {
+    90%{
+        visibility: hidden;
+    }
+    100% {
+        margin-top: -35rem;
+    }
+}
+
+@keyframes shrink-skills {
+    100% {
+        font-size: 1em;
+    }
+
+}
+
+@keyframes shrink-name {
+    100% {
+        font-size: 3em;
+        margin-top: 0rem
+    }
+}
+
+@media (max-width: 1024px){
+    .intro-overlay-wrapper{
+        position: relative;
+        animation: none;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        width: 100vw;
+    }
+    .name{
+        animation: none;
+        margin:0px;
+    }
+    .avatar-wrapper{
+        margin-top: 2rem;
+        animation: none;
+        text-align: center;
+        width: 100%;
+    }
+    .avatar{
+        width: 28vw;
+        height: 28vw;
+        animation: none;
+        min-width: 180px;
+        min-height: 180px;
+    }
+    .info{
+        animation: none;
+    }
+    .resume{
+        animation: none;
+    }
+}

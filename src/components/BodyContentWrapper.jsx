@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './Styles/MainContainerWrapper.css'
 class BodyContentWrapper extends React.Component{
 
     render(){
