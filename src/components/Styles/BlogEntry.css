@@ -1,0 +1,24 @@
+.blog-entry-wrapper {
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 90%;
+}
+
+.blog-entry-wrapper:hover {
+    scale: 1.01;
+}
+
+.blog-entry-wrapper hr {
+    width: 30%;
+    margin-left: 0px
+}
+
+.blog-entry-link {
+    text-decoration: none;
+    color: var(--font-color-light);
+}
+
+.blog-entry-link:hover {
+    text-decoration: underline;
+}

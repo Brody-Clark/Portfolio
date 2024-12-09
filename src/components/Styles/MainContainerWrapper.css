@@ -1,0 +1,15 @@
+.main-container-wrapper {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+}
+
+.main-container-wrapper:nth-of-type(n+2):nth-last-of-type(n+2) {
+    background-color: black;
+    color: white;
+}
+
+@media(max-width: 1024px) {
+ .main-container-wrapper{
+    width: 100vw;
+ }   
+}

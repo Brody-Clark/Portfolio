@@ -1,5 +1,6 @@
-import React from 'react';
-import FormError from './FormError';
+import React from 'react'
+import FormError from './FormError'
+import './Styles/ContactForm.css'
 
 class ContactForm extends React.Component {
     constructor(props) {
@@ -25,11 +26,9 @@ class ContactForm extends React.Component {
         switch (fieldName) {
             case 'email':
                 emailValid = value.match(/^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,6}$/);
-                //formErrors.email = emailValid ? '' : 'Email does not follow correct format';
                 break;
             case 'message-body':
                 msgValid = value.length > 0;
-                //formErrors.password = msgValid ? '' : 'Message cannot be empty';
                 break;
             default:
                 break;
@@ -69,17 +68,17 @@ class ContactForm extends React.Component {
                 <h2 className="section-title">Get in Touch</h2>
                 <div className='contact-fields-wrapper'></div>
                 <div className="message-field-wrapper">
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input type="text" id="email" name="email" onChange={this.OnFieldChanged}
                         value={this.state.email} className="contact-field email" />
                 </div>
                 <FormError errorMsg={this.state.emailError}></FormError>
                 <div className="message-field-wrapper">
-                    <label for="subject">Subject</label>
+                    <label htmlFor="subject">Subject</label>
                     <input type="text" id="subject" className="contact-field subject" />
                 </div>
                 <div className="message-field-wrapper">
-                    <label for="message-body">Message</label>
+                    <label htmlFor="message-body">Message</label>
                     <textarea id="message-body" name="message" rows="20"
                         value={this.state.message} onChange={this.OnFieldChanged} className="contact-field message-body"></textarea>
                 </div>

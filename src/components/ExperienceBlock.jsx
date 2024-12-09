@@ -1,12 +1,13 @@
-import React from "react";
+import React from "react"
+import './Styles/ExperienceBlock.css'
 
 class ExperienceBlock extends React.Component{
     constructor(props){
         super(props);
     }
 
-    listDesc = this.props.listExp.map(exp =>
-        <li>{exp}</li>
+    listDesc = this.props.listExp.map((exp,index) =>
+        <li key={index} >{exp}</li>
     );
 
     render(){

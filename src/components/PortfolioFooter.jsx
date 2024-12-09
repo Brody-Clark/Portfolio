@@ -1,4 +1,5 @@
 import React from 'react';
+import './Styles/Footer.css'
 
 class PortfolioFooter extends React.Component {
     constructor(props) {

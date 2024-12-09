@@ -1,0 +1,65 @@
+.schools-container {
+    margin-top: 6rem;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.school-info-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 3rem
+}
+
+.school-info-container li {
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+.school-info-container img {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+.school-name{
+    margin: 0px;
+    font-size: 3rem;
+}
+
+
+
+@media (max-width:1024px) {
+
+    .school-info-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .schools-container{
+        margin: 0px;
+    }
+    .school-info-container img {
+        width: 50%;
+    }
+}
+
+
+@supports (animation-timeline: view()) {
+
+    .school-info-container li,
+    .school-name {
+        animation: fade-in-left ease-in both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 30%;
+    }
+}
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        translate: 4rem 0;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0 0;
+    }
+}

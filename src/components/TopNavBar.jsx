@@ -1,5 +1,6 @@
-import React from 'react'
-import SearchBar from "./SearchBar"
+import React from 'react';
+import SearchBar from "./SearchBar";
+import './Styles/NavBar.css';
 
 class TopNavBar extends React.Component {
 

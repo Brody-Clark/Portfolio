@@ -1,7 +1,8 @@
 import React from 'react'
-import TopNavBar from './TopNavBar';
+import TopNavBar from './TopNavBar'
 import Avatar from '../Resources/avatar.jpg'
 import Resume from '../Resources/Brody_Clark_Resume.pdf'
+import './Styles/Banner.css'
 
 class Banner extends React.Component {
 

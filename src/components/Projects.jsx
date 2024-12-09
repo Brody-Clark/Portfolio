@@ -1,9 +1,10 @@
-import React from "react";
-import ProjectThumbnail from './ProjectThumbnail';
-import CountryAppImg from '../Resources/country-weather.png';
-import DragDropImg from '../Resources/drag-drop.png';
-import GroceryAppImg from '../Resources/react-grocery-app.png';
-import PortfolioTemplateImg from '../Resources/portfolio.png';
+import React from "react"
+import ProjectThumbnail from './ProjectThumbnail'
+import CountryAppImg from '../Resources/country-weather.png'
+import DragDropImg from '../Resources/drag-drop.png'
+import GroceryAppImg from '../Resources/react-grocery-app.png'
+import PortfolioTemplateImg from '../Resources/portfolio.png'
+import './Styles/ProjectContainer.css'
 
 class ProjectsContent extends React.Component {
 

@@ -1,6 +1,5 @@
-import React, { useSyncExternalStore } from "react";
-import PennStateImg from '../Resources/PSU.png';
-import BostonImg from '../Resources/BU.png';
+import React from "react";
+import './Styles/Education.css';
 
 class Education extends React.Component {
 
@@ -10,18 +9,25 @@ class Education extends React.Component {
                 <h2 class="section-title">Education</h2>
                 <div class="schools-container">
                     <div class="school-info-container">
-                        <img src={PennStateImg} alt="Penn State" />
-                        <p>I gradutaed from Penn State with a bachelors of Science degree in Aerospace Enineering in
-                            2021.
-                            I placed my focus on vehicle autonomy and simulation, and programming. As my Capstone
-                            projcet I creatd a fully autonomous drone capable of landing on designated targets.
-                        </p>
+                        <div>
+                            <h3 className="school-name">Penn State</h3>
+                            <p>2015-2021</p>
+                        </div>
+                        <ul>
+                            <li>Graduated in 2021 with B.S in Aerospace Enineering.</li>
+                            <li>Studied programming and vehicle autonomy and simulation</li>
+                            <li>As my Capstone project I creatd a fully autonomous drone capable of landing on designated targets.</li>
+                        </ul>
                     </div>
                     <div class="school-info-container">
-                        <img src={BostonImg} alt="Boston University" />
-                        <p>I am currently obtaining my Masters dgree from Boston University studying Computer
-                            Science.
-                            I have created applications in python and web pages using React.</p>
+                        <div>
+                            <h3 className="school-name">Boston University</h3>
+                            <p>2024-Present</p>
+                        </div>
+                        <ul>
+                            <li>Currently pursuing M.S in Computer Science.</li>
+                            <li>Created applications in python and web pages using React.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
