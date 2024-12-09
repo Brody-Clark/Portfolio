@@ -5,10 +5,10 @@ class Education extends React.Component {
 
     render() {
         return (
-            <div class="main-container education">
-                <h2 class="section-title">Education</h2>
-                <div class="schools-container">
-                    <div class="school-info-container">
+            <div className="main-container education">
+                <h2 className="section-title">Education</h2>
+                <div className="schools-container">
+                    <div className="school-info-container">
                         <div>
                             <h3 className="school-name">Penn State</h3>
                             <p>2015-2021</p>
@@ -19,7 +19,7 @@ class Education extends React.Component {
                             <li>As my Capstone project I creatd a fully autonomous drone capable of landing on designated targets.</li>
                         </ul>
                     </div>
-                    <div class="school-info-container">
+                    <div className="school-info-container">
                         <div>
                             <h3 className="school-name">Boston University</h3>
                             <p>2024-Present</p>

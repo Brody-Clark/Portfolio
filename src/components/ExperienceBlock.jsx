@@ -12,13 +12,13 @@ class ExperienceBlock extends React.Component{
 
     render(){
         return(
-            <div class="experience-block">
-                <div class="image-wrapper">
+            <div className="experience-block">
+                <div className="image-wrapper">
                     <img src={this.props.img} alt={this.props.imgAlt} />
                 </div>
-                <div class="text">
+                <div className="text">
                     <h2>{this.props.title}</h2>
-                    <ul class="experience-info">
+                    <ul className="experience-info">
                         {this.listDesc}
                     </ul>
                 </div>
