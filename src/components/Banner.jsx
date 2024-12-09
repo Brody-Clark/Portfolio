@@ -17,7 +17,7 @@ class Banner extends React.Component {
                     <div className="info-wrapper">
                         <div className="info">
                             <h2 className="name">Brody Clark</h2>
-                            <p className="skills">3D Fullstack Tools DevOps</p>
+                            <p className="skills">3D Tools DevOps</p>
                             <a href={Resume} target="_blank" download="Brody Clark"
                                 className="button-round button-text resume">
                                 <span>
