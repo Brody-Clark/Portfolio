@@ -14,7 +14,7 @@
 
 .school-info-container li {
     font-size: 1.5rem;
-    padding: .5rem;
+    padding-bottom: 1rem;
 }
 
 .school-info-container img {
@@ -47,19 +47,17 @@
 
     .school-info-container li,
     .school-name {
-        animation: fade-in-left ease-in both;
+        animation: fade-in ease-in both;
         animation-timeline: view();
         animation-range: entry 0% cover 30%;
     }
 }
-@keyframes fade-in-left {
+@keyframes fade-in{
     0% {
         opacity: 0;
-        translate: 4rem 0;
     }
 
     100% {
         opacity: 1;
-        translate: 0 0;
     }
 }
