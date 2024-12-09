@@ -9,8 +9,8 @@ class Experience extends React.Component {
 
     render() {
         return (
-            <div class="main-container work-experience">
-                <h2 class="section-title">Professional Experience</h2>
+            <div className="main-container work-experience">
+                <h2 className="section-title">Professional Experience</h2>
                 <ExperienceBlock img={UnrealImg} imgAlt="Unreal Editor" title="Unreal Engine"
                     listExp={['Developed a high-perfomrance VR application for automotive designers',
                         'Created custom editor layout and editor tools',
